@@ -134,14 +134,14 @@ importers:
         specifier: workspace:^
         version: link:../popover
       date-fns:
-        specifier: ^2.26.0
-        version: 2.30.0
+        specifier: ^3.0.0
+        version: 3.3.1
       react:
         specifier: ^18.2.0
         version: 18.2.0
       react-day-picker:
         specifier: ^8.0.4
-        version: 8.10.0(date-fns@2.30.0)(react@18.2.0)
+        version: 8.10.0(date-fns@3.3.1)(react@18.2.0)
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
@@ -536,8 +536,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       date-fns:
-        specifier: ^2.26.0
-        version: 2.30.0
+        specifier: ^3.0.0
+        version: 3.3.1
       dedent:
         specifier: ^1.0.0
         version: 1.5.1
@@ -1997,8 +1997,8 @@ importers:
         specifier: ^2.1.0
         version: 2.2.2
       date-fns:
-        specifier: ^2.26.0
-        version: 2.30.0
+        specifier: ^3.0.0
+        version: 3.3.1
       decimal.js:
         specifier: ^10.4.1
         version: 10.4.3
@@ -3128,6 +3128,7 @@ packages:
   /@aws-sdk/client-sso-oidc@3.507.0(@aws-sdk/credential-provider-node@3.507.0):
     resolution: {integrity: sha512-ms5CH2ImhqqCIbo5irxayByuPOlVAmSiqDVfjZKwgIziqng2bVgNZMeKcT6t0bmrcgScEAVnZwY7j/iZTIw73g==}
     engines: {node: '>=14.0.0'}
+    requiresBuild: true
     peerDependencies:
       '@aws-sdk/credential-provider-node': ^3.507.0
     dependencies:
@@ -3178,6 +3179,7 @@ packages:
   /@aws-sdk/client-sso@3.507.0:
     resolution: {integrity: sha512-pFeaKwqv4tXD6QVxWC2V4N62DUoP3bPSm/mCe2SPhaNjNsmwwA53viUHz/nwxIbs8w4vV44UQsygb0AgKm+HoQ==}
     engines: {node: '>=14.0.0'}
+    requiresBuild: true
     dependencies:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
@@ -3609,6 +3611,7 @@ packages:
   /@aws-sdk/token-providers@3.507.0(@aws-sdk/credential-provider-node@3.507.0):
     resolution: {integrity: sha512-ehOINGjoGJc6Puzon7ev4bXckkaZx18WNgMTNttYJhj3vTpj5LPSQbI/5SS927bEbpGMFz1+hJ6Ra5WGfbTcEQ==}
     engines: {node: '>=14.0.0'}
+    requiresBuild: true
     dependencies:
       '@aws-sdk/client-sso-oidc': 3.507.0(@aws-sdk/credential-provider-node@3.507.0)
       '@aws-sdk/types': 3.502.0
@@ -9634,7 +9637,7 @@ packages:
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.9)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.4
       '@vanilla-extract/css': 1.14.1
-      esbuild: 0.17.6
+      esbuild: 0.19.12
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -11605,6 +11608,11 @@ packages:
     engines: {node: '>=0.11'}
     dependencies:
       '@babel/runtime': 7.23.9
+    dev: true
+
+  /date-fns@3.3.1:
+    resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
+    dev: false
 
   /deasync@0.1.29:
     resolution: {integrity: sha512-EBtfUhVX23CE9GR6m+F8WPeImEE4hR/FW9RkK0PMl9V1t283s0elqsTD8EZjaKX28SY1BW2rYfCgNsAYdpamUw==}
@@ -18109,13 +18117,13 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-day-picker@8.10.0(date-fns@2.30.0)(react@18.2.0):
+  /react-day-picker@8.10.0(date-fns@3.3.1)(react@18.2.0):
     resolution: {integrity: sha512-mz+qeyrOM7++1NCb1ARXmkjMkzWVh2GL9YiPbRjKe0zHccvekk4HE+0MPOZOrosn8r8zTHIIeOUXTmXRqmkRmg==}
     peerDependencies:
       date-fns: ^2.28.0 || ^3.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      date-fns: 2.30.0
+      date-fns: 3.3.1
       react: 18.2.0
     dev: false
 
